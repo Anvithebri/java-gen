@@ -1,3 +1,5 @@
+import anvith.Scanner;
+
 public class functionexample {
 //    access_specifier-public, protected, private and default
 //    return type-- data type
@@ -33,7 +35,8 @@ public class functionexample {
         }
 
         public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
+            Scanner sc;
+            sc = new Scanner(System.in);
             System.out.println("Enter value of A");
             int a = sc.nextInt();
             System.out.println("Enter value of B");
