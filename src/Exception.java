@@ -1,5 +1,5 @@
 import java.io.IOException;
-public class Exception {
+public class Exception extends Throwable {
     //checked
     void checked() throws IOException{
         throw new IOException();

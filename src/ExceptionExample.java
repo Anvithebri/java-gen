@@ -18,7 +18,7 @@
         public static void main(String[] args) {
             ExceptionExample obj = new ExceptionExample();
             try {
-                obj.div(0);
+                obj.div(8);
             }catch (ArithmeticException e){
                 e.printStackTrace();
             }
@@ -35,6 +35,8 @@
             }
             catch(Exception e){
                 e.printStackTrace();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
 
 
